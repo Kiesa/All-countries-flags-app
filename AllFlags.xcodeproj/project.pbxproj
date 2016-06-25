@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2231B4AE1D146B4E00BB5995 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231B4AD1D146B4E00BB5995 /* Flag.swift */; };
+		2231B4B11D151DEB00BB5995 /* FlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231B4B01D151DEB00BB5995 /* FlagCell.swift */; };
+		2231B4B31D1524C000BB5995 /* flag.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2231B4B21D1524C000BB5995 /* flag.csv */; };
+		2231B4B51D15439E00BB5995 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231B4B41D15439E00BB5995 /* csv.swift */; };
+		22DAF59A1D16D12B00CEBB43 /* FlagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DAF5991D16D12B00CEBB43 /* FlagDetailViewController.swift */; };
 		22E80ED21D14622A00F43363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E80ED11D14622A00F43363 /* AppDelegate.swift */; };
 		22E80ED41D14622A00F43363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E80ED31D14622A00F43363 /* ViewController.swift */; };
 		22E80ED71D14622A00F43363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E80ED51D14622A00F43363 /* Main.storyboard */; };
 		22E80ED91D14622A00F43363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E80ED81D14622A00F43363 /* Assets.xcassets */; };
-		22E80EDC1D14622A00F43363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E80EDA1D14622A00F43363 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2231B4AD1D146B4E00BB5995 /* Flag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		2231B4B01D151DEB00BB5995 /* FlagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagCell.swift; sourceTree = "<group>"; };
+		2231B4B21D1524C000BB5995 /* flag.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flag.csv; sourceTree = "<group>"; };
+		2231B4B41D15439E00BB5995 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		22DAF5991D16D12B00CEBB43 /* FlagDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagDetailViewController.swift; sourceTree = "<group>"; };
 		22E80ECE1D14622A00F43363 /* AllFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E80ED11D14622A00F43363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E80ED31D14622A00F43363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22E80ED61D14622A00F43363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E80ED81D14622A00F43363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22E80EDB1D14622A00F43363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E80EDD1D14622A00F43363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2231B4AC1D146B1900BB5995 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2231B4AD1D146B4E00BB5995 /* Flag.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2231B4AF1D151D7F00BB5995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2231B4B01D151DEB00BB5995 /* FlagCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2231B4B61D15451C00BB5995 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2231B4B41D15439E00BB5995 /* csv.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		2231B4B71D1545D400BB5995 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22E80ED31D14622A00F43363 /* ViewController.swift */,
+				22DAF5991D16D12B00CEBB43 /* FlagDetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		22E80EC51D14622A00F43363 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +95,14 @@
 		22E80ED01D14622A00F43363 /* AllFlags */ = {
 			isa = PBXGroup;
 			children = (
+				2231B4AC1D146B1900BB5995 /* Model */,
+				2231B4AF1D151D7F00BB5995 /* View */,
+				2231B4B71D1545D400BB5995 /* Controller */,
+				2231B4B61D15451C00BB5995 /* Util */,
 				22E80ED11D14622A00F43363 /* AppDelegate.swift */,
-				22E80ED31D14622A00F43363 /* ViewController.swift */,
+				2231B4B21D1524C000BB5995 /* flag.csv */,
 				22E80ED51D14622A00F43363 /* Main.storyboard */,
 				22E80ED81D14622A00F43363 /* Assets.xcassets */,
-				22E80EDA1D14622A00F43363 /* LaunchScreen.storyboard */,
 				22E80EDD1D14622A00F43363 /* Info.plist */,
 			);
 			path = AllFlags;
@@ -96,6 +140,7 @@
 				TargetAttributes = {
 					22E80ECD1D14622A00F43363 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P38SB5DK8U;
 					};
 				};
 			};
@@ -122,7 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E80EDC1D14622A00F43363 /* LaunchScreen.storyboard in Resources */,
+				2231B4B31D1524C000BB5995 /* flag.csv in Resources */,
 				22E80ED91D14622A00F43363 /* Assets.xcassets in Resources */,
 				22E80ED71D14622A00F43363 /* Main.storyboard in Resources */,
 			);
@@ -136,7 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E80ED41D14622A00F43363 /* ViewController.swift in Sources */,
+				2231B4AE1D146B4E00BB5995 /* Flag.swift in Sources */,
 				22E80ED21D14622A00F43363 /* AppDelegate.swift in Sources */,
+				2231B4B11D151DEB00BB5995 /* FlagCell.swift in Sources */,
+				2231B4B51D15439E00BB5995 /* csv.swift in Sources */,
+				22DAF59A1D16D12B00CEBB43 /* FlagDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +198,6 @@
 				22E80ED61D14622A00F43363 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		22E80EDA1D14622A00F43363 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22E80EDB1D14622A00F43363 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AllFlags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khrystenko.AllFlags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,10 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AllFlags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.khrystenko.AllFlags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -288,6 +335,7 @@
 				22E80EE21D14622A00F43363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
